@@ -1,0 +1,23 @@
+spring.application.name=learn-springboot
+
+logging.level.org.springframework=info
+
+
+# Here the Prod environment is working.
+# The logging level is used of the prod now not of application.properties itself, 
+# as we have ased to use of prod.
+spring.profiles.active=prod
+
+
+
+# Similarly for Dev environment.
+#spring.profiles.active=dev
+currency-service.url=http//:defaultapplication.com
+currency-service.username=defaultusername
+currency-service.key=defaultkey
+
+
+#/Users/ma20466299/Desktop/Spring-springBoot/SpringAndBoot/learn-springboot/target/learn-springboot-0.0.1-SNAPSHOT.jar
+
+#management.endpoints.web.exposure.include=*
+management.endpoints.web.exposure.include=health, metrics
